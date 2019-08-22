@@ -15,7 +15,7 @@ gem 'octicons_helper', '~> 4.0'
 gem 'omniauth-orcid', '~> 2.0.2'
 gem 'octokit', '~> 4.14'
 gem 'pdf-reader', '~> 1.4'
-gem 'pg', '~> 0.21.0'
+gem 'pg', '~> 1.1.4'
 gem 'will_paginate', '~> 3.1.6'
 gem 'rails', '5.2.3'
 gem 'responders'
@@ -37,7 +37,10 @@ gem 'jquery-rails', '~> 4.3.1'
 
 gem 'custom_error_message', '~> 1.1.1'
 # Use Unicorn as the app server
-gem 'unicorn', '~> 5.3.1'
+platforms :ruby do 
+  gem 'unicorn'
+end
+gem 'tzinfo-data'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

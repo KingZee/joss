@@ -22,3 +22,5 @@
 
 docs/_build
 latest.dump
+
+/config/*.yml
